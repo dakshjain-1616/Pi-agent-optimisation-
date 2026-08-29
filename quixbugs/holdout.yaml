@@ -1,0 +1,32 @@
+# holdout split — 20 tasks. Run: harbor run -c holdout.yaml --job-name <name>
+n_concurrent_trials: 3
+retry: {max_retries: 2}          # one trial in 80 died in pi's npm install
+
+agents:
+  - import_path: pi_local:PiLocal
+    model_name: openrouter/z-ai/glm-5.3-flash
+    kwargs: {src: ../pi/packages/coding-agent}
+
+datasets:
+  - path: ./datasets/quixbugs
+    task_names:
+      - quixbugs-java-bitcount
+      - quixbugs-java-detect_cycle
+      - quixbugs-java-gcd
+      - quixbugs-java-kheapsort
+      - quixbugs-java-levenshtein
+      - quixbugs-java-lis
+      - quixbugs-java-next_permutation
+      - quixbugs-java-quicksort
+      - quixbugs-java-shortest_path_lengths
+      - quixbugs-java-shunting_yard
+      - quixbugs-python-bitcount
+      - quixbugs-python-breadth_first_search
+      - quixbugs-python-find_in_sorted
+      - quixbugs-python-is_valid_parenthesization
+      - quixbugs-python-levenshtein
+      - quixbugs-python-mergesort
+      - quixbugs-python-pascal
+      - quixbugs-python-possible_change
+      - quixbugs-python-shortest_path_length
+      - quixbugs-python-sieve

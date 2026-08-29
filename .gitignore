@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Secrets — never push API keys / .env files
+# ---------------------------------------------------------------------------
+.env
+*.env
+!.env.example
+quixbugs/.env
+
+# ---------------------------------------------------------------------------
+# Language / build hygiene
+# ---------------------------------------------------------------------------
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# Test / data / run artifacts (raw; keep summaries + reports in the repo)
+# ---------------------------------------------------------------------------
+# Raw QuixBugs run outputs (139 MB). Summaries + experiment_notes.md + README.md
+# already capture every finding; uncomment the line below only if you want the
+# raw artifacts pushed (large).
+# quixbugs/jobs/
+quixbugs/jobs/
+
+# QuixBugs input dataset (5.4 MB) — uncomment to push the task corpus
+# quixbugs/datasets/
+quixbugs/datasets/
+
+# Scratch dirs
+pi.git.bak/
+.archive/
+.tmp/
+command.txt
+
+# ---------------------------------------------------------------------------
+# OS / editor / misc
+# ---------------------------------------------------------------------------
+*.log
+*.nohup
+*.tgz

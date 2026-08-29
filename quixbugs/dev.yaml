@@ -1,0 +1,72 @@
+# dev split — 60 tasks. Run: harbor run -c dev.yaml --job-name <name>
+n_concurrent_trials: 3
+retry: {max_retries: 2}          # one trial in 80 died in pi's npm install
+
+agents:
+  - import_path: pi_local:PiLocal
+    model_name: openrouter/z-ai/glm-5.3-flash
+    kwargs: {src: ../pi/packages/coding-agent}
+
+datasets:
+  - path: ./datasets/quixbugs
+    task_names:
+      - quixbugs-java-breadth_first_search
+      - quixbugs-java-bucketsort
+      - quixbugs-java-depth_first_search
+      - quixbugs-java-find_first_in_sorted
+      - quixbugs-java-find_in_sorted
+      - quixbugs-java-flatten
+      - quixbugs-java-get_factors
+      - quixbugs-java-hanoi
+      - quixbugs-java-is_valid_parenthesization
+      - quixbugs-java-knapsack
+      - quixbugs-java-kth
+      - quixbugs-java-lcs_length
+      - quixbugs-java-longest_common_subsequence
+      - quixbugs-java-max_sublist_sum
+      - quixbugs-java-mergesort
+      - quixbugs-java-minimum_spanning_tree
+      - quixbugs-java-next_palindrome
+      - quixbugs-java-pascal
+      - quixbugs-java-possible_change
+      - quixbugs-java-powerset
+      - quixbugs-java-reverse_linked_list
+      - quixbugs-java-rpn_eval
+      - quixbugs-java-shortest_path_length
+      - quixbugs-java-shortest_paths
+      - quixbugs-java-sieve
+      - quixbugs-java-sqrt
+      - quixbugs-java-subsequences
+      - quixbugs-java-to_base
+      - quixbugs-java-topological_ordering
+      - quixbugs-java-wrap
+      - quixbugs-python-bucketsort
+      - quixbugs-python-depth_first_search
+      - quixbugs-python-detect_cycle
+      - quixbugs-python-find_first_in_sorted
+      - quixbugs-python-flatten
+      - quixbugs-python-gcd
+      - quixbugs-python-get_factors
+      - quixbugs-python-hanoi
+      - quixbugs-python-kheapsort
+      - quixbugs-python-knapsack
+      - quixbugs-python-kth
+      - quixbugs-python-lcs_length
+      - quixbugs-python-lis
+      - quixbugs-python-longest_common_subsequence
+      - quixbugs-python-max_sublist_sum
+      - quixbugs-python-minimum_spanning_tree
+      - quixbugs-python-next_palindrome
+      - quixbugs-python-next_permutation
+      - quixbugs-python-powerset
+      - quixbugs-python-quicksort
+      - quixbugs-python-reverse_linked_list
+      - quixbugs-python-rpn_eval
+      - quixbugs-python-shortest_path_lengths
+      - quixbugs-python-shortest_paths
+      - quixbugs-python-shunting_yard
+      - quixbugs-python-sqrt
+      - quixbugs-python-subsequences
+      - quixbugs-python-to_base
+      - quixbugs-python-topological_ordering
+      - quixbugs-python-wrap
