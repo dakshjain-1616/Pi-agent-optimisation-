@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">QuixBugs scores before and after NEO's autonomous research loop</title>
+  <desc id="desc">Development score rose from 82 to 95 percent. Sealed holdout score rose from 80 to 95 percent. The model stayed fixed and five system prompt guidelines were added.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#111d35"/>
+    </linearGradient>
+    <linearGradient id="after" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="820" rx="36" fill="url(#bg)"/>
+  <circle cx="1260" cy="100" r="230" fill="#38bdf8" opacity=".06"/>
+  <circle cx="90" cy="760" r="240" fill="#5eead4" opacity=".05"/>
+
+  <text x="96" y="112" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="48" font-weight="750">Both evaluation splits reached 95%</text>
+  <text x="96" y="162" fill="#9fb0c8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="24">QuixBugs tasks solved before and after the autonomous research loop</text>
+
+  <g transform="translate(96 235)" filter="url(#shadow)">
+    <rect width="1248" height="420" rx="28" fill="#111c30" stroke="#263653"/>
+    <line x1="300" y1="86" x2="1150" y2="86" stroke="#30415f"/>
+    <line x1="300" y1="210" x2="1150" y2="210" stroke="#30415f"/>
+    <line x1="300" y1="334" x2="1150" y2="334" stroke="#30415f"/>
+
+    <text x="38" y="132" fill="#f1f5f9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="30" font-weight="700">Development</text>
+    <text x="38" y="166" fill="#8da0ba" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20">60 visible tasks</text>
+    <text x="38" y="282" fill="#f1f5f9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="30" font-weight="700">Holdout</text>
+    <text x="38" y="316" fill="#8da0ba" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20">20 sealed tasks</text>
+
+    <text x="300" y="51" fill="#8da0ba" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">0%</text>
+    <text x="705" y="51" fill="#8da0ba" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">50%</text>
+    <text x="1112" y="51" fill="#8da0ba" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">100%</text>
+
+    <rect x="300" y="105" width="697" height="35" rx="17" fill="#465872"/>
+    <rect x="300" y="150" width="808" height="48" rx="24" fill="url(#after)"/>
+    <text x="1014" y="132" fill="#b8c6d9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="650">82% · 49/60</text>
+    <text x="1127" y="183" fill="#e8fffc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="800">95%</text>
+    <text x="300" y="229" fill="#5eead4" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">+8 tasks · +13 percentage points</text>
+
+    <rect x="300" y="255" width="680" height="35" rx="17" fill="#465872"/>
+    <rect x="300" y="300" width="808" height="48" rx="24" fill="url(#after)"/>
+    <text x="997" y="282" fill="#b8c6d9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="650">80% · 16/20</text>
+    <text x="1127" y="333" fill="#e8fffc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="800">95%</text>
+    <text x="300" y="379" fill="#5eead4" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">+3 tasks · +15 percentage points</text>
+  </g>
+
+  <g transform="translate(96 700)">
+    <rect width="1248" height="62" rx="18" fill="#0b1628" stroke="#263653"/>
+    <circle cx="32" cy="31" r="8" fill="#5eead4"/>
+    <text x="54" y="39" fill="#c8d5e5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21">Same model</text>
+    <circle cx="260" cy="31" r="8" fill="#5eead4"/>
+    <text x="282" y="39" fill="#c8d5e5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21">One file changed</text>
+    <circle cx="535" cy="31" r="8" fill="#5eead4"/>
+    <text x="557" y="39" fill="#c8d5e5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21">Five general guidelines</text>
+    <circle cx="880" cy="31" r="8" fill="#5eead4"/>
+    <text x="902" y="39" fill="#c8d5e5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21">Holdout run once</text>
+  </g>
+</svg>
