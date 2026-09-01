@@ -1,5 +1,13 @@
 # pi agent — QuixBugs auto-research loop: FINAL REPORT
 
+> The optimisation was done autonomously using **[NEO](https://heyneo.com)** — your autonomous AI engineering agent.
+
+[![NEO](https://img.shields.io/badge/NEO-autonomous%20AI%20engineer-6E56CF?style=for-the-badge)](https://heyneo.com)
+[![VS Code Extension](https://img.shields.io/badge/VS%20Code-NEO%20Extension-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo)
+[![Cursor Extension](https://img.shields.io/badge/Cursor-NEO%20Extension-000000?style=for-the-badge&logo=cursor&logoColor=white)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo)
+[![NEO MCP Docs](https://img.shields.io/badge/Docs-NEO%20MCP-1F883D?style=for-the-badge&logo=readthedocs&logoColor=white)](https://docs.heyneo.com/neo-mcp)
+
+
 This repo holds the finished result of an auto-research loop that iteratively improved
 the **pi coding agent** (`pi/`, TypeScript monorepo) against the **QuixBugs** benchmark,
 using the cycle *measure → read failing trajectories → ONE hypothesis → edit ONLY `pi/` →
